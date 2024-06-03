@@ -22,4 +22,4 @@ jobs:
       - run: cargo test
       - run: cargo build --release
       - name: Deb Build
-        uses: ebbflow-io/cargo-deb-amd64-ubuntu@1.0
+        uses: RincewindWizzard/cargo-deb-amd64-alpine@v1
