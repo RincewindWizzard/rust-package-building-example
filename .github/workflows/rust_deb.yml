@@ -25,11 +25,19 @@ jobs:
           gpg_private_key: "${{ secrets.GPG_PRIVATE_KEY }}"
           email: "git@magierdinge.de"
 
+      - name: Build
+        uses: Tiryoh/actions-mkdocs@v0
+        with:
+          mkdocs_version: 'latest' # option
+          requirements: 'requirements.txt'
+
       - name: Archive Debian Package
         uses: actions/upload-artifact@v4
         with:
           name: Debian Package
           path: ./target/debian/*.deb
+
+      - run: "mv site/* ./target/gh-pages/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

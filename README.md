@@ -1,7 +1,8 @@
 # rust-package-building-example
 
 An example of how to build a Personal Package Archive for Debian APT delivering your rust application.
-
+Includes [Github Actions](.github/workflows(rust_deb.yml) for CI/CD.
+Builds your documentation using [Mkdocs](https://www.mkdocs.org/).
 
 ## Installing from PPA
 
@@ -10,7 +11,6 @@ An example of how to build a Personal Package Archive for Debian APT delivering 
     echo "deb [arch=amd64,signed-by=/etc/apt/trusted.gpg.d/rust-package-building-example.gpg]  https://rincewindwizzard.github.io/rust-package-building-example/deb/ ./" > /etc/apt/sources.list.d/rust-package-building-example.list
     apt update
     apt install rust-package-building-example
-
 
 ## Bump version on each commit
 
