@@ -2,7 +2,8 @@
 
 An example of how to build a Personal Package Archive for Debian APT delivering your rust application.
 Includes [Github Actions](.github/workflows(rust_deb.yml) for CI/CD.
-Builds your documentation using [Mkdocs](https://www.mkdocs.org/).
+Builds your [documentation](https://rincewindwizzard.github.io/rust-package-building-example/) using [Mkdocs](https://www.mkdocs.org/).
+
 
 ## Installing from PPA
 
