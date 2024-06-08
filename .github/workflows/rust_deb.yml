@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Rust Build DEB PPA
-        uses: RincewindWizzard/rust-build-action@v15
+        uses: RincewindWizzard/rust-build-action@v16
         with:
           gpg_private_key: "${{ secrets.GPG_PRIVATE_KEY }}"
           email: "git@magierdinge.de"
