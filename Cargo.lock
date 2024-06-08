@@ -4,4 +4,4 @@ version = 3
 
 [[package]]
 name = "rust-package-building-example"
-version = "0.1.21"
+version = "0.1.22"
