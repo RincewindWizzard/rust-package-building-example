@@ -1,12 +1,13 @@
 [package]
 name = "rust-package-building-example"
 description = "An example of how to build a Personal Package Archive for Debian APT delivering your rust application."
-version = "0.1.18"
+version = "0.1.19"
 edition = "2021"
 authors = ["RincewindWizzard <git@magierdinge.de>"]
 repository = "https://github.com/RincewindWizzard/rust-package-building-example"
 readme = "README.md"
 license = "LGPL-2"
+homepage = "https://github.com/RincewindWizzard/rust-package-building-example"
 
 
 [dependencies]
